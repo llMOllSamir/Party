@@ -1,0 +1,149 @@
+/*...................... Main Section.................... */
+* {
+  margin: 0;
+}
+#main {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.4)),
+    url(/images/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+}
+
+#main h1 {
+  font-size: 60px;
+}
+#main p {
+  font-size: 14px;
+}
+#main span {
+  font-size: 32px;
+  position: absolute;
+  top: 60%;
+  left: 1%;
+  cursor: pointer;
+}
+#main #nav {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  bottom: 0;
+  background-color: rgb(37, 36, 36);
+  display: flex;
+  flex-direction: column;
+  width: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#main #nav a {
+  color: white;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+#main #nav a:first-of-type {
+  margin-right: 20px;
+  text-align: right;
+  cursor: pointer;
+}
+#main #nav a:hover {
+  color: brown;
+}
+
+/*...................... details Section.................... */
+#singers {
+  width: 65%;
+  padding: 100px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+#singers h3 {
+  background-color: coral;
+  margin-bottom: 0;
+  cursor: pointer;
+  padding: 5px;
+}
+#singers div {
+  display: none;
+}
+#singers div p {
+  background-color: rgba(128, 128, 128, 0.331);
+  margin: 0;
+  padding: 10px;
+}
+
+#singers div:first-of-type {
+  display: block;
+}
+
+/*...................... Duration Section.................... */
+
+#duration {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.8)),
+    url(/images/join.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  margin: 50px auto;
+}
+#duration .timeLeft {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  width: 80%;
+  text-align: center;
+  padding: 30px;
+  margin: 40px auto;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*...................... Contact Section.................... */
+#contact {
+  margin: 100px auto;
+}
+#contact .contact P {
+  margin: 40px 2px;
+}
+#contact .contact P span {
+  margin-right: 10px;
+}
+#icons {
+  display: flex;
+  margin: 30px 2px;
+}
+
+#icons .icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+#icons .icon:hover {
+  background-color: rgb(97, 36, 36);
+  color: white;
+}
+
+form input {
+  padding: 5px 2px;
+  margin-bottom: 20px;
+}
+form textarea {
+  resize: unset;
+}
