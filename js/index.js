@@ -30,7 +30,7 @@ $("#singers h3").click(function () {
 });
 // .................................... Count Down Time ............................
 function getTime() {
-  let countDownTime = new Date("2023/04/25").getTime();
+  let countDownTime = new Date("2030/04/25").getTime();
   let now = new Date().getTime();
   let dist = countDownTime - now;
   let day = Math.floor(dist / 1000 / 60 / 60 / 24);
